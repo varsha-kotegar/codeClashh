@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - Student Placement Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EduConnect</h1>
+        <p>Your Placement Preparation Buddy</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#preparation-sections">Preparation Guide</a></li>
+            <li><a href="#qa-section">Q&A</a></li>
+            <li><a href="#connect-section">Connect with Alumni</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Preparation Sections -->
+        <section id="preparation-sections">
+            <h2>Preparation by Year</h2>
+            <div class="year-section">
+                <h3>2nd Year Preparation</h3>
+                <p>Focus on foundational knowledge, coding basics, and exploring career paths.</p>
+                <button onclick="showTips('2nd')">Show Tips</button>
+                <div id="tips-2nd" class="tips-container"></div>
+            </div>
+
+            <div class="year-section">
+                <h3>3rd Year Preparation</h3>
+                <p>Enhance problem-solving skills, work on projects, and learn new technologies.</p>
+                <button onclick="showTips('3rd')">Show Tips</button>
+                <div id="tips-3rd" class="tips-container"></div>
+            </div>
+
+            <div class="year-section">
+                <h3>4th Year Preparation</h3>
+                <p>Practice mock interviews, build resumes, and network with professionals.</p>
+                <button onclick="showTips('4th')">Show Tips</button>
+                <div id="tips-4th" class="tips-container"></div>
+            </div>
+        </section>
+
+        <!-- Q&A Section -->
+        <section id="qa-section">
+            <h2>Ask Questions</h2>
+            <form id="qa-form">
+                <textarea id="question" placeholder="Ask your question here..."></textarea>
+                <button type="button" onclick="submitQuestion()">Submit</button>
+            </form>
+            <div id="questions-container"></div>
+        </section>
+
+        <!-- Connect with Alumni Section -->
+        <section id="connect-section">
+            <h2>Connect with Alumni</h2>
+            <p>Reach out to passed-out students on LinkedIn for mentorship and guidance.</p>
+            <a href="https://linkedin.com" target="_blank">Go to LinkedIn</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle."</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
